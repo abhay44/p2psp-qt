@@ -36,4 +36,5 @@ cd bin
 ./monitor --splitter_addr 127.0.0.1 --splitter_port 8001 > /dev/null &
 ./peer --splitter_addr 127.0.0.1 --splitter_port 8001 --player_port 10000 
 ```
+and please execute `./simple-player` or open `simple-player` normally.
 
