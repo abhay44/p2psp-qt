@@ -29,6 +29,8 @@ SimplePlayer::SimplePlayer(QWidget *parent)
     ui->video->setMediaPlayer(_player);
     ui->volume->setMediaPlayer(_player);
     ui->volume->setVolume(50);
+    _media = new VlcMedia("http://localhost:10000", _instance);
+    _player->open(_media);
 //    ui->seek->setMediaPlayer(_player);
 
     connect(ui->actionOpenLocal, &QAction::triggered, this, &SimplePlayer::openLocal);
